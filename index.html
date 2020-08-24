@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Huddle landing page with alternating feature blocks</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.6.2/tailwind.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 400;
+      color: var(--very__dark__cyan);
+    }
+
+    a {
+      color: var(--very__dark__cyan);
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      color: var(--very__dark__cyan);
+    }
+
+    :root {
+      --pink: hsl(322, 100%, 66%);
+      --very__pale__cyan: hsl(193, 100%, 96%);
+      --very__dark__cyan: hsl(192, 100%, 9%);
+      --grayish__blue: hsl(208, 11%, 55%);
+    }
+
+    .footer-color {
+      color: var(--very__pale__cyan);
+    }
+
+    .very--dark--cyan {
+      color: var(--very__dark__cyan);
+    }
+
+    .text-pink {
+      color: var(--pink);
+    }
+
+    .bg-pink {
+      background: var(--pink);
+    }
+
+    .p-57 {
+      padding-top: 57px;
+    }
+
+    .b-radius {
+      border-radius: 50px;
+    }
+
+    .px-13 {
+
+      padding-left: 3.2rem;
+      padding-right: 3.2rem;
+
+    }
+
+    header {
+      background: url(../images/bg-hero-mobile.svg) no-repeat 50% 50%/cover;
+      background-color: var(--very__pale__cyan);
+      height: auto;
+    }
+
+    .shadow-own {
+      box-shadow: 1px 2px 12px 4px #00000014;
+    }
+
+    .gray {
+      color: var(--grayish__blue);
+    }
+
+    .rounded-lg {
+      border-radius: 0.8rem;
+    }
+
+    .services div+div {
+      margin-top: 40px;
+    }
+
+    .bg-black {
+      background: var(--very__dark__cyan);
+    }
+
+    .navigation p+p {
+      margin-top: 18px;
+    }
+
+    @media screen and (max-width:768px) {
+
+      .img-lg {
+        width: 88%;
+        margin: 0 auto;
+      }
+
+      .started {
+        position: absolute;
+        bottom: -235px;
+        box-shadow: 0px -2px 15px -3px rgba(0, 0, 0, .1), 0 4px 6px -2px rgba(0, 0, 0, .05);
+        left: 50%;
+        transform: translateX(-50%);
+        width: 93%;
+      }
+
+      .services {
+        margin-bottom: 180px;
+      }
+    }
+
+    @media screen and (min-width:768px) {
+      .max {
+        max-width: 1240px;
+        margin: 0 auto;
+      }
+
+      .img-lg {
+        width: 40%;
+        margin: 0 0;
+      }
+
+      .section-w {
+        width: 47%;
+      }
+
+      .lg\:px-16 {
+        padding-left: 4rem;
+        padding-right: 4rem;
+      }
+
+      .lg\:text-4xl {
+        font-size: 2.5rem;
+      }
+
+      .started {
+        position: absolute;
+        bottom: -350px;
+        box-shadow: 0px -2px 15px -3px rgba(0, 0, 0, .1), 0 4px 6px -2px rgba(0, 0, 0, .05);
+        left: 50%;
+        transform: translateX(-50%);
+        width: 60%;
+      }
+
+      .services {
+        margin-bottom: 280px;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+  <!-- header -->
+  <header class="px-5 pt-5 pb-8 md:pt-10">
+    <div class="max">
+      <div class="navigation flex items-center justify-between pb-20">
+
+        <div class="logo"><img src="images/logo.svg" alt="Huddle" class="w-32 md:w-40 lg:w-48"></div>
+
+        <div><button
+            class="b-radius bg-white shadow-lg .very--dark--cyan font-bold py-1 px-6 cursor-pointer text-sm lg:px-16 lg:py-3 transition duration-500 ease-in-out hover:bg-transparent hover:text-gray-900 border-2 border-transparent hover:border-pink-500 focus:outline-none">Try
+            It
+            Free</button></div>
+
+      </div>
+      <!-- end of navigation -->
+
+      <!-- hero -->
+      <div class="hero md:flex md:items-center">
+
+        <div class="hero-text px-5 text-center md:flex md:flex-col md:items-start lg:w-3/5 lg:px-0">
+
+          <h1 class="text-center text-2xl mb-5 lg:text-4xl lg:text-left">Build The Community Your Fans Will Love</h1>
+
+          <p class="text-center mb-8 lg:text-left lg:text-lg">Huddle re-imagines the way we build communities. You have
+            a voice,
+            but so does
+            your
+            audience.
+            Create connections with your users as you engage in genuine discussion.</p>
+
+          <a href="#"
+            class="inline-block font-bold cursor-pointer bg-pink b-radius py-3 px-13 text-white text-sm shadow-lg mb-16 lg:px-16 lg:py-4 transition duration-500 ease-in-out hover:bg-transparent hover:text-gray-900 border-2 border-transparent hover:border-pink-500">Get
+            Started For
+            Free</a>
+
+        </div>
+
+        <div class="hero-img">
+
+          <img src="images/illustration-mockups.svg" alt="Illustration"
+            class="w-full md:w-8/12 md:mx-auto md:my-0 lg:w-11/12 lg:ml-auto lg:mr-0">
+
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- services -->
+  <div class="services my-5 py-10 px-5 relative max">
+
+    <div
+      class="text-center bg-white shadow-own rounded-lg py-8 px-6 lg:mt-32 lg:flex lg:pr-8 lg:pl-32 lg:text-left justify-between lg:py-12">
+      <img src="images/illustration-grow-together.svg" alt="Grow Together" class="img-lg object-cover lg:order-2">
+      <div class="section-w lg:flex lg:flex-col lg:justify-center">
+        <h2 class="capitalize text-xl mb-5 lg:text-3xl lg:order-1">grow together</h2>
+        <p class="gray text-sm lg:text-lg lg:order-2" class="img-lg">Generate meaningful discussions with your audience
+          and build a
+          strong,
+          loyal community.
+          Think of the insightful conversations you miss out on with a feedback form.</p>
+      </div>
+
+    </div>
+    <!-- end first -->
+
+    <div
+      class="text-center bg-white shadow-own rounded-lg py-8 px-6 lg:flex lg:pr-8 lg:pl-32 lg:text-left justify-between lg:py-12">
+      <img src="images/illustration-flowing-conversation.svg" alt="Flowing Conversations" class="img-lg object-cover">
+      <div class="section-w lg:flex lg:flex-col lg:justify-center">
+        <h2 class="capitalize text-xl mb-5 lg:text-3xl lg:order-1">flowing conversations</h2>
+        <p class="gray text-sm lg:text-lg lg:order-2" class="img-lg">You wouldn't paginate a conversation in real life,
+          so why do
+          it online?
+          Our
+          threads
+          have just-in-time loading for a more natural flow.</p>
+      </div>
+
+    </div>
+    <!-- end second  -->
+
+    <div
+      class="text-center bg-white shadow-own rounded-lg py-8 px-6 lg:flex lg:pr-8 lg:pl-32 lg:text-left justify-between lg:py-12">
+      <img src="images/illustration-your-users.svg" alt="Yours Users" class="img-lg object-cover order-2">
+      <div class="section-w lg:flex lg:flex-col lg:justify-center">
+        <h2 class="capitalize text-xl mb-5 lg:text-3xl lg:order-1">your users</h2>
+        <p class="gray text-sm lg:text-lg lg:order-2" class="img-lg">It takes no time at all to integrate Huddle with
+          your app's
+          authentication
+          solution.
+          This means, once signed in to your app, your users can start chatting immediately.</p>
+      </div>
+    </div>
+    <!-- end third -->
+
+    <div class="started text-center bg-white flex items-center flex-col py-10 rounded-lg lg:py-16 lg:px-12">
+      <h2 class="text-lg px-3 mb-5 lg:text-3xl">Ready To Build Your Community?</h2>
+      <a href="#"
+        class="inline-block font-bold cursor-pointer bg-pink b-radius py-3 px-12 text-white text-xs shadow-lg lg:py-5 lg:px-16 lg:mt-2 transition duration-500 ease-in-out hover:bg-transparent hover:text-gray-900 border-2 border-transparent hover:border-pink-500">Get
+        Started For
+        Free</a>
+    </div>
+  </div>
+
+
+
+  <div class="bg-black footer-color px-5">
+
+    <div class="lg:flex max pt-40 pb-16">
+      <div class=" info lg:flex lg:justify-center lg:flex-col lg:w-1/3">
+        <img src="images/logo2.svg" alt="Logo Huddle" class="w-40 lg:w-56 lg:mb-3">
+        <p class="flex items-start mt-6"><img src="images/icon-location.svg" alt="Location" class="mr-5 mt-1
+        ">Lorem ipsum dolor
+          sit
+          amet,
+          consectetur
+          adipiscing elit, sed
+          do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua</p>
+        <p class="flex items-start mt-6 hover:underline cursor-pointer"><img src="images/icon-phone.svg" alt="Phone"
+            class="mr-5 mt-1">+1-543-123-4567
+        </p>
+        <p class="flex items-start mt-6 hover:underline cursor-pointer"><img src="images/icon-email.svg" alt="Email"
+            class="mr-5 mt-1 ">
+          example@huddle.com</p>
+
+      </div>
+
+      <div class="navigation mt-16 text-lg lg:w-1/3 lg:flex lg:justify-center">
+        <div class="lg:mr-20 lg:ml-32">
+          <p class="hover:underline cursor-pointer">About Us</p>
+          <p class="hover:underline cursor-pointer">What We Do</p>
+          <p class="hover:underline cursor-pointer">FAQ</p>
+        </div>
+        <div>
+          <p class="hover:underline cursor-pointer">Career</p>
+          <p class="hover:underline cursor-pointer">Blog</p>
+          <p class="hover:underline cursor-pointer">Contact Us</p>
+        </div>
+
+      </div>
+
+      <div class="social-menu mt-12 lg:w-1/3">
+        <ul class="flex justify-center">
+          <li
+            class="border border-gray-200 border-solid rounded-full p-2 w-8 h-8 flex items-center justify-center cursor-pointer hover:border-pink-500 border-2 border-transparent transition duration-500 ease-in-out">
+            <i class="fab fa-facebook-f text-sm text-gray-200"></i>
+          </li>
+          <li
+            class="mx-3 border border-gray-200 border-solid rounded-full p-2 w-8 h-8 flex items-center justify-center cursor-pointer hover:border-pink-500 border-2 border-transparent transition duration-500 ease-in-out">
+            <i class="fab fa-twitter text-sm text-gray-200"></i></li>
+          <li
+            class="border border-gray-200 border-solid rounded-full p-2 w-8 h-8 flex items-center justify-center cursor-pointer hover:border-pink-500 border-2 border-transparent transition duration-500 ease-in-out">
+            <i class="fab fa-instagram text-sm text-gray-200"></i></li>
+        </ul>
+
+      </div>
+
+    </div>
+    <p class="mt-6 text-xs text-center pb-12 max lg:text-right">&copy; Copyright 2018 Huddle. All rights reserved.</p>
+  </div>
+</body>
+
+</html>
